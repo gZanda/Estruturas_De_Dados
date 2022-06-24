@@ -1,0 +1,11 @@
+2 métodos de construção do HEAP
+LINHA 90 - ATENÇÃO
+
+HEAPIFY() e CORRIGE_SUBINDO() :
+- Método que recebe um vetor já pronto com os dados posicionados e aplica "CorrigeDescendo()"
+da metade pra cima ( metade sendo o último nó pai, abaixo dele existem apenas FOLHAS);
+
+INSERT() e CORRIGE_DESCENDO() :
+- Método que vai recebendo cada valor a ser inserido no heap e já corrigindo o posicionamento
+com "CorrigeSubinfo()";
+

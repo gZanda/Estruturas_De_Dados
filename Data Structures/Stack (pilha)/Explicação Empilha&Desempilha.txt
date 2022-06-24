@@ -1,0 +1,23 @@
+Empilha:
+
+1° - Cria um novo ponteiro q aponta para um novo NOH (este criado com "new noh(valor)"), ou seja,
+um ponteiro para um objeto ( nota: observe o uso do contrutor de noh);
+2° - Setta o "mNextNoh" desse novo nó criado para o "mTopo" que é o noh que o topo da pilha 
+aponta;
+3° - Setta esse "mTopo" para o "novo" (nó que acabou de ser criado), pois ele é o novo topo 
+da pilha;
+4° - Aumenta o "mTamPilha";
+
+Desempilha:
+
+1° - "valor" recebe o valor pra qual o "mTopo" da pilha aponta;
+2° - Um noh "temporario" é criado, aponta-o para o topo da pilha ("mTopo");
+3° - "mTopo" da pilha recebe o valor de "mNextNoh" (usando o operador ->);
+4° - dlete[] "temp";
+5° - Diminiu o tamanho da pilha;
+6° - Retorna um valor (que é referente ao noh desempilhado)
+
+OBS: Modifiquei a linha 70, para que o "mTopo" apontasse para "mNextNoh" do vetor temporario,
+o que faz mais sentido;
+
+antes era: "mTopo = mTopo -> mNextNoh;"

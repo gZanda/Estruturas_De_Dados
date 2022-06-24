@@ -1,0 +1,22 @@
+FILA:
+
+Enfileirar:
+
+1° - Cria um ponteiro para um novo Noh (esse criado com "new noh(valor)") (ele aponta para NULL)
+2° - IF para verificar se o tamanho é == 0
+SE FOR - O ponteiro "mInicio" da fila é apontado para esse "novo"
+SE NÂO FOR - O "mNext" do nó para qual o ponteiro "mFim" da pilha aponta é apontado
+para esse "novo" (usando ->, "mFim -> mNext  = novo;" );
+3° - O ponteiro "mFim" da filda é apontado para esse "novo" noh
+4° - Tamanho da fila ++;
+
+Desenfileirar:
+
+1° - "valor" recebe "mValor" do ponteiro noh para qual "mInicio" da fila aponta
+2° - Criar se um noh* temporário apontando para "mInicio" da fila;
+3° - "mInicio" é apontado para "mNext" do nó que temp aponta ("mInicio = temp -> mNext;") 
+4° - deleta-se temp;
+5° - mTamanho--;
+6° - IF para verificar se mTamanho==0
+SE FOR - "mFim == NULL"
+
